@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.8272, -6.1754]
+      },
+      "properties": {
+        "description": "Observation site at Monas",
+        "title": "Urban Heat Study",
+        "date": "2025-08-10",
+        "owner": "Shulhan",
+        "email": "owner@example.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.425, -7.005]
+      },
+      "properties": {
+        "description": "Mangrove monitoring station",
+        "title": "Blue Carbon Stock Analysis",
+        "date": "2025-07-25",
+        "owner": "Shulhan",
+        "email": "owner@example.com"
+      }
+    }
+  ]
+}
