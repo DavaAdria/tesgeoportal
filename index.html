@@ -39,11 +39,12 @@
         onEachFeature: function (feature, layer) {
           let props = feature.properties;
           let popupContent = `
-            <b>Data description:</b> ${props.description}<br>
-            <b>Research Title:</b> ${props.title}<br>
-            <b>Date taken:</b> ${props.date}<br>
-            <b>Data owner:</b> ${props.owner}<br>
-            <b>Owner email:</b> <a href="mailto:${props.email}">${props.email}</a>
+          <b>Data description:</b> ${props.description}<br>
+          <b>Research Title:</b> ${props.title}<br>
+          <b>Date taken:</b> ${props["research date"] || ""}<br>
+          <b>Data owner:</b> ${props.owner}<br>
+          <b>Data availability:</b> ${props["data availability"] || ""}<br>
+          <b>Owner email:</b> <a href="mailto:${props.email}">${props.email}</a>
           `;
           layer.bindPopup(popupContent);
         }
